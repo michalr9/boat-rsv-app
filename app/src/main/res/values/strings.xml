@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Boat Reservation System</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Zaloguj się </string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Logowanie nieudane"</string>
+    <string name="login_failed_err">"Błędna wartość"</string>
+    <string name="version_err">"Błąd wersji kodu"</string>
+
+    <string name="login">Log in</string>
+    <string name="auth0_client_id">22N4G1NqxVi5F2RV1VLBaSEcUtPaZ77i</string>
+    <string name="auth0_domain">dev-m2z94jmu.eu.auth0.com</string>
+    <string name="api_url">http://10.0.2.2:8080/timesheets</string>
+
+</resources>
