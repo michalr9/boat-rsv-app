@@ -16,5 +16,13 @@
     <string name="auth0_client_id">22N4G1NqxVi5F2RV1VLBaSEcUtPaZ77i</string>
     <string name="auth0_domain">dev-m2z94jmu.eu.auth0.com</string>
     <string name="api_url">http://10.0.2.2:8080/timesheets</string>
+    <string name="account">Konto</string>
+    <string name="yachts">Jachty</string>
+    <string name="reservations">Rezerwacje</string>
+    <string name="title_activity_admin">Panel Administracyjny</string>
+    <string name="title_activity_cus_panel">Panel użytkownika</string>
+    <string name="title_activity_acc">Dane</string>
+    <string name="title_activity_prd">Jachty</string>
+    <string name="title_activity_rsv">Rezerwacje</string>
 
 </resources>
