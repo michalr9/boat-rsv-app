@@ -114,12 +114,10 @@ public class LoginActivity extends AppCompatActivity implements Callback<SignInR
 
     private void onLoginFailed() {
         Toast.makeText(this, getString(R.string.login_failed), Toast.LENGTH_LONG).show();
-        loadingProgressBar.setVisibility(View.INVISIBLE);
     }
 
     @Override
     public void onFailure(Call<SignInResponse> call, Throwable t) {
         Toast.makeText(this, getString(R.string.login_failed_err), Toast.LENGTH_LONG).show();
-        loadingProgressBar.setVisibility(View.INVISIBLE);
     }
 }

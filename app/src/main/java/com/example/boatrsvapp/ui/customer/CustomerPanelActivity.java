@@ -6,9 +6,10 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ToggleButton;
 
 import com.example.boatrsvapp.R;
+import com.example.boatrsvapp.ui.customer.account.AccountActivity;
+import com.example.boatrsvapp.ui.customer.products.ProductsActivity;
 
 public class CustomerPanelActivity extends AppCompatActivity {
     private Button buttonAccount,buttonProducts,buttonReservations;

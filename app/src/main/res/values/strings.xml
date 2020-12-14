@@ -24,5 +24,11 @@
     <string name="title_activity_acc">Dane</string>
     <string name="title_activity_prd">Jachty</string>
     <string name="title_activity_rsv">Rezerwacje</string>
+    <string name="name">Nazwa</string>
+    <string name="description">Opis</string>
+    <string name="price">Cena</string>
+    <string name="data_load">Załadowano dane</string>
+    <string name="data_load_err">Błąd pobierania danych</string>
+    <string name="data_loading">Pobieram dane...</string>
 
 </resources>

@@ -12,14 +12,17 @@
         android:screenOrientation="portrait"
         android:supportsRtl="true"
         android:theme="@style/Theme.BoatRsvApp">
-        <activity android:name=".ui.customer.ReservationsActivity" android:label="@string/title_activity_rsv"></activity>
-        <activity android:name=".ui.customer.ProductsActivity" android:label="@string/title_activity_prd"/>
-        <activity android:name=".ui.customer.AccountActivity" android:label="@string/title_activity_acc"/>
-        <activity android:name=".ui.admin.AdminPanelActivity" android:label="@string/title_activity_admin"/>
-        <activity android:name=".ui.customer.CustomerPanelActivity" android:label="@string/title_activity_cus_panel"/>
+        <activity android:name=".ui.customer.ReservationsActivity"
+            android:label="@string/title_activity_rsv"
+            android:screenOrientation="portrait"/>
+        <activity android:screenOrientation="portrait" android:name=".ui.customer.products.ProductsActivity" android:label="@string/title_activity_prd"/>
+        <activity android:screenOrientation="portrait" android:name=".ui.customer.account.AccountActivity" android:label="@string/title_activity_acc"/>
+        <activity android:screenOrientation="portrait" android:name=".ui.admin.AdminPanelActivity" android:label="@string/title_activity_admin"/>
+        <activity android:screenOrientation="portrait" android:name=".ui.customer.CustomerPanelActivity" android:label="@string/title_activity_cus_panel"/>
         <activity
             android:name=".ui.LoginActivity"
-            android:label="@string/title_activity_login">
+            android:label="@string/title_activity_login"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
