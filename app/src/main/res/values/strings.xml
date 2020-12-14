@@ -15,6 +15,17 @@
     <string name="login">Log in</string>
     <string name="auth0_client_id">22N4G1NqxVi5F2RV1VLBaSEcUtPaZ77i</string>
     <string name="auth0_domain">dev-m2z94jmu.eu.auth0.com</string>
-    <string name="api_url">http://10.0.2.2:8080/timesheets</string>
+
+    <string name="personal_data">Dane personalne</string>
+    <string name="title_activity_customer_home">CustomerHomeActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_personal_info">Konto</string>
+    <string name="menu_products">Galeria</string>
 
 </resources>

@@ -10,7 +10,6 @@ import retrofit2.Callback;
 import retrofit2.Response;
 
 import android.os.CountDownTimer;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -22,7 +21,7 @@ import com.example.boatrsvapp.R;
 import com.example.boatrsvapp.data.model.Authority;
 import com.example.boatrsvapp.data.model.SignInResponse;
 import com.example.boatrsvapp.ui.admin.AdminPanelActivity;
-import com.example.boatrsvapp.ui.customer.CustomerPanelActivity;
+import com.example.boatrsvapp.ui.customer.CustomerHomeActivity;
 
 import java.util.Collection;
 import java.util.LinkedList;
@@ -35,11 +34,12 @@ public class LoginActivity extends AppCompatActivity implements Callback<SignInR
     EditText passwordEditText;
     Button loginButton;
     ProgressBar loadingProgressBar;
+
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-
 
          usernameEditText = findViewById(R.id.username);
           passwordEditText = findViewById(R.id.password);
@@ -58,7 +58,6 @@ public class LoginActivity extends AppCompatActivity implements Callback<SignInR
         new CountDownTimer(3000,1000){
             @Override
             public void onTick(long l) {
-                
             }
 
             @Override
@@ -89,7 +88,7 @@ public class LoginActivity extends AppCompatActivity implements Callback<SignInR
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
             if(signInResponse.getAuthorities().parallelStream().anyMatch(authority -> authority.getAuthority().equals("ROLE_USER"))){
-                Intent customerPanel = new Intent(this, CustomerPanelActivity.class).putExtra("Token",signInResponse.getAccessToken());
+                Intent customerPanel = new Intent(this, CustomerHomeActivity.class).putExtra("Token",signInResponse.getAccessToken());
                 startActivity(customerPanel);
             }else if(signInResponse.getAuthorities().parallelStream().anyMatch(authority -> authority.getAuthority().equals("ROLE_ADMIN"))){
                 Intent adminPanel = new Intent(this, AdminPanelActivity.class).putExtra("Token",signInResponse.getAccessToken());

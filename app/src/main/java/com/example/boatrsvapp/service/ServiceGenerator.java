@@ -1,5 +1,6 @@
 package com.example.boatrsvapp.service;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.SharedPreferences;
 
@@ -58,7 +59,7 @@ public final class ServiceGenerator {
     }
 
     private String getToken(Context context) {
-        SharedPreferences preferences = context.getSharedPreferences("myPrefs", 0);
+        SharedPreferences preferences = context.getSharedPreferences("myPrefs", Activity.MODE_PRIVATE);
         return preferences != null ? preferences.getString("token", "") : "";
     }
 
