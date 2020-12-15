@@ -12,7 +12,7 @@ import androidx.lifecycle.ViewModel;
 import retrofit2.Call;
 
 public class ProductsViewModel extends ViewModel {
-    List<Product> productList = new ArrayList<Product>();
+    List<Product> productList = new ArrayList<>();
     ProductPage currentPage;
     ProductService productService = new ServiceGenerator().createService(ProductService.class);
 

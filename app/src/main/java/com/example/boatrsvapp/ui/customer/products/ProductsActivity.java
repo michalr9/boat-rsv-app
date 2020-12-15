@@ -92,7 +92,7 @@ public class ProductsActivity extends AppCompatActivity {
         productAdapter.notifyDataSetChanged();
         loading=false;
         recyclerView.setPadding(0,0,0,0);
-        Toast.makeText(this, getString(R.string.data_load), Toast.LENGTH_LONG).show();
+//        Toast.makeText(this, getString(R.string.data_load), Toast.LENGTH_LONG).show();
 
     }
 

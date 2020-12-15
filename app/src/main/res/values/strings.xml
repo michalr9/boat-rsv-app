@@ -39,5 +39,6 @@
     <string name="postal_code">01-200</string>
     <string name="room_number">Numer mieszkania</string>
     <string name="city">Miasto</string>
+    <string name="logout">Wyloguj</string>
 
 </resources>

@@ -66,7 +66,7 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ViewHold
             holder.textViewShortDesc.setText(short_desc);
 
             Glide.with(context).load(product.getImgUrl()).into(holder.imageView);
-
+//TODO wejscie w detale produktu
 //            holder.itemView.setOnClickListener(new View.OnClickListener() {
 //                @Override
 //                public void onClick(View view) {
