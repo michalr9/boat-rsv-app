@@ -36,7 +36,7 @@
     <string name="phone_placeholder">111-222-333</string>
     <string name="surname">Nazwisko</string>
     <string name="street">Ulica</string>
-    <string name="postal_code">01200</string>
+    <string name="postal_code">01-200</string>
     <string name="room_number">Numer mieszkania</string>
     <string name="city">Miasto</string>
 

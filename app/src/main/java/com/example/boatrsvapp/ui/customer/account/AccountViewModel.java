@@ -19,4 +19,8 @@ public class AccountViewModel extends ViewModel {
         return this.customerService.getCustomer();
     }
 
+    public final Call<Customer> updateCustomer(Customer customer) {
+        return this.customerService.updateCustomer(customer);
+    }
+
 }
