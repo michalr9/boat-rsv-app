@@ -89,10 +89,10 @@ public class LoginActivity extends AppCompatActivity implements Callback<SignInR
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
             if(signInResponse.getAuthorities().parallelStream().anyMatch(authority -> authority.getAuthority().equals("ROLE_USER"))){
-                Intent customerPanel = new Intent(this, CustomerPanelActivity.class).putExtra("Token",signInResponse.getAccessToken());
+                Intent customerPanel = new Intent(this, CustomerPanelActivity.class).putExtra("token",signInResponse.getAccessToken());
                 startActivity(customerPanel);
             }else if(signInResponse.getAuthorities().parallelStream().anyMatch(authority -> authority.getAuthority().equals("ROLE_ADMIN"))){
-                Intent adminPanel = new Intent(this, AdminPanelActivity.class).putExtra("Token",signInResponse.getAccessToken());
+                Intent adminPanel = new Intent(this, AdminPanelActivity.class).putExtra("token",signInResponse.getAccessToken());
                 startActivity(adminPanel);
             }
         }else{

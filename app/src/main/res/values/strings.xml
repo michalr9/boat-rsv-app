@@ -30,5 +30,14 @@
     <string name="data_load">Załadowano dane</string>
     <string name="data_load_err">Błąd pobierania danych</string>
     <string name="data_loading">Pobieram dane...</string>
+    <string name="name_cus">Imię</string>
+    <string name="save_button">Zapisz</string>
+    <string name="email_placeholder">reservation@op.pl</string>
+    <string name="phone_placeholder">111-222-333</string>
+    <string name="surname">Nazwisko</string>
+    <string name="street">Ulica</string>
+    <string name="postal_code">01200</string>
+    <string name="room_number">Numer mieszkania</string>
+    <string name="city">Miasto</string>
 
 </resources>

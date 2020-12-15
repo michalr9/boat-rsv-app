@@ -1,6 +1,5 @@
 package com.example.boatrsvapp.data.model;
 
-import java.time.LocalDate;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -14,5 +13,5 @@ public class Licence {
     private Long cusId;
     private String number;
     private String kind;
-    private LocalDate cusBirthday;
+    private String[] cusBirthday;
 }

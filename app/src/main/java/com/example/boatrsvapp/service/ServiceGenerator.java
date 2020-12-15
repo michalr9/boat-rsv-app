@@ -1,7 +1,9 @@
 package com.example.boatrsvapp.service;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.util.Log;
 
 import org.jetbrains.annotations.NotNull;
 
@@ -38,8 +40,8 @@ public final class ServiceGenerator {
         return this.retrofit.create(serviceClass);
     }
 
-    public final <S> S createServiceWithToken(Class<S> serviceClass, @NotNull Context context) {
-        final String token = this.getToken(context);
+    public final <S> S createServiceWithToken(Class<S> serviceClass, Context context) {
+        final String token = getToken(context);
         this.logging.setLevel(HttpLoggingInterceptor.Level.HEADERS);
         this.httpClient.addInterceptor(this.logging);
         if (!Intrinsics.areEqual(token, "")) {
@@ -58,8 +60,13 @@ public final class ServiceGenerator {
     }
 
     private String getToken(Context context) {
-        SharedPreferences preferences = context.getSharedPreferences("myPrefs", 0);
-        return preferences != null ? preferences.getString("token", "") : "";
+        if(context!=null) {
+            SharedPreferences preferences = context.getSharedPreferences("myPrefs", Activity.MODE_PRIVATE);
+            return preferences != null ? preferences.getString("token", "") : "";
+        }else{
+            Log.e("ServiceGenerator","Context is null !!!");
+            return "";
+        }
     }
 
 }
